@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DON MATTEO | Hamburguesas, Empanadas y Pizzas</title>
+<meta name="description" content="Don Matteo. Familia, parrilla y masa hecha hoy. Hamburguesas, empanadas y pizzas. Martínez.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+<!-- BRAND INTRO - animación de marca -->
+<div id="brandIntro" aria-hidden="true">
+  <div class="intro-logo"><img src="assets/logo.png" alt=""></div>
+  <div class="intro-chars"><img src="assets/personaje-saludando.png" alt=""><img src="assets/personaje-comiendo.png" alt=""><img src="assets/personaje-sorprendido.png" alt=""></div>
+</div>
+
+<div class="noise"></div>
+<div class="cursor" id="cursor"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo"><img src="assets/logo.png" alt="Don Matteo"></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/5491112345678?text=Hola%20Don%20Matteo!%20Quiero%20hacer%20un%20pedido" target="_blank" class="nav-cta">PEDIR AHORA</a>
+    <button class="burger" id="burger" aria-label="menu">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#nosotros">Nosotros</a><a href="#menu">Menú</a><a href="#contacto">Contacto</a>
+    <a href="https://wa.me/5491112345678" class="mobile-cta">PEDIR POR WHATSAPP</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg">
+    <div class="diag-loop diag-1"><div class="diag-track"><span>DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • </span><span>DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • </span></div></div>
+    <div class="diag-loop diag-2"><div class="diag-track reverse"><span>DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • </span><span>DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • DON MATTEO • </span></div></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-logo-wrap reveal">
+      <img src="assets/logo.png" alt="Logo Don Matteo" class="hero-logo">
+      <div class="hero-badge">FAMILIA DESDE 1998</div>
+    </div>
+    <h1 class="hero-title">
+      <span class="line1">EL SABOR</span>
+      <span class="line2">QUE TE HACE</span>
+      <span class="line3">VOLVER<i>!</i></span>
+    </h1>
+    <p class="hero-sub">Carne a la parrilla, masa amasada esta mañana y la receta de la abuela que no perdona. No te cuento cuentos: lo mordés, cerrás los ojos y entendés por qué el barrio vuelve cada semana.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="button">VER MENÚ</a>
+      <a href="#contacto" class="button button--lila">HACER PEDIDO</a>
+    </div>
+    <div class="hero-stats">
+      <div><strong>+15k</strong><span>vecinos que ya volvieron</span></div>
+      <div><strong>4.9★</strong><span>en Google, con nombre y apellido</span></div>
+      <div><strong>30min</strong><span>promedio a tu puerta</span></div>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span>SCROLL</span><div class="line"></div></div>
+</section>
+
+<section id="nosotros" class="section-nosotros">
+  <div class="container">
+    <div class="nosotros-grid">
+      <div class="nosotros-text reveal">
+        <span class="eyebrow">SOMOS DE ACÁ</span>
+        <h2>NO ES UN LOCAL.<br>ES LA COCINA<br>DE <em>TU CASA</em></h2>
+        <p>Empezamos en una cocina chica, con una mesa que se doblaba contra la pared. La abuela estiraba la masa y nosotros contábamos los repulgues. Hoy la mesa es más grande; la forma de trabajar es la misma.</p>
+        <p>Si venís con hambre, te vas lleno. Si venís mal, te vas mejor. Ese es el trato que hicimos en 1998 y no lo cambiamos.</p>
+        <div class="nosotros-meta">
+          <div><strong>13</strong><span>repulgues por empanada, contados</span></div>
+          <div><strong>180g</strong><span>medallón, sin vueltas</span></div>
+          <div><strong>7</strong><span>días, dos turnos</span></div>
+        </div>
+        <a href="#menu" class="button" style="margin-top:22px">VER MENÚ</a>
+      </div>
+      <div class="char-center reveal"><img src="assets/personaje-comiendo.png" alt="Personaje comiendo hamburguesa"></div>
+      <div class="nosotros-bento reveal">
+        <div class="bento bento-coral">
+          <span>🔥</span><h3>Parrilla prendida todo el día</h3><p>Carbón, no plancha eléctrica. El humo hace su parte y la carne queda jugosa adentro, con costra afuera.</p>
+        </div>
+        <div class="bento bento-lila">
+          <span>🥟</span><h3>Hechas hoy, una por una</h3><p>La masa no pasa la noche. La pellizcamos a mano, por eso no se abre y chorrea cuando la mordés.</p>
+        </div>
+        <div class="bento bento-crema">
+          <span>🏡</span><h3>Atendidos por nosotros</h3><p>Somos familia. Si te atendimos una vez, la segunda ya sabemos si te gustan con picante.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee"><div class="marquee-track"><span>HAMBURGUESAS • EMPANADAS • PIZZAS • PAPAS DOBLE FRITURA • DON MATTEO • </span><span>HAMBURGUESAS • EMPANADAS • PIZZAS • PAPAS DOBLE FRITURA • DON MATTEO • </span></div></div>
+
+<section id="menu" class="section-menu">
+  <div class="float-character char-2"><img src="assets/personaje-saludando.png" alt=""><div class="char-bubble">¡Hola, soy Matteo!</div></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow light">LO QUE SALE TODOS LOS DÍAS</span>
+      <h2 class="section-title">ELEGÍ. <span>NOSOTROS AMASAMOS.</span></h2>
+      <p>Burguers con pan brioche de hoy, empanadas que no se desarman y pizzas con masa de 48h. Todo con papas si querés.</p>
+    </div>
+    <div class="tabs reveal" role="tablist">
+      <button class="tab active" data-tab="burgers">Hamburguesas</button>
+      <button class="tab" data-tab="empanadas">Empanadas</button>
+      <button class="tab" data-tab="pizzas">Pizzas</button>
+    </div>
+    <div class="grid-menu" id="burgerGrid"></div>
+    <div class="grid-menu hidden" id="empGrid"></div>
+    <div class="grid-menu hidden" id="pizzaGrid"></div>
+    <div style="display:flex;justify-content:center;margin-top:32px" class="reveal">
+      <a href="https://wa.me/5491112345678?text=Hola%20Don%20Matteo!%20Quiero%20pedir" target="_blank" class="button" id="menuCta">PEDIR AHORA</a>
+    </div>
+  </div>
+</section>
+
+<section class="separator-personaje reveal">
+  <div class="sep-inner">
+    <img src="assets/personaje-sorprendido.png" alt="" class="sep-img">
+    <div class="sep-text">
+      <span class="sep-badge">¿SABÍAS QUÉ?</span>
+      <h3>PAPAS QUE<br>NO PERDONAN</h3>
+      <p>Corte a mano, doble fritura y pimentón que te queda en los dedos. La mitad del barrio viene solo por esto.</p>
+    </div>
+  </div>
+</section>
+
+<section id="empanadas-info" class="testimonios reveal">
+  <div class="container">
+    <h3>LO QUE DICE EL BARRIO</h3>
+    <div class="testi-grid">
+      <div class="testi"><p>"La Doble Matteo es un lío hermoso. Te la tenés que comer con las dos manos."</p><span>— Marcos, Martínez ★★★★★</span></div>
+      <div class="testi"><p>"Las de carne cortada me hacen acordar a lo de mi vieja. No fallan."</p><span>— Lucía, Olivos ★★★★★</span></div>
+      <div class="testi"><p>"Pido y a los 25’ están golpeando. Y con sonrisa, siempre."</p><span>— Camila, La Lucila ★★★★★</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section-contacto">
+  <div class="float-character char-3"><img src="assets/personaje-sorprendido.png" alt=""><div class="char-bubble">¡Acá estamos!</div></div>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="eyebrow light">VENÍ O ESCRIBÍ</span>
+        <h2>¿HAMBRE?<br><span>HABLEMOS.</span></h2>
+        <p>Estamos de 11:30 a 15 y de 19 a 00. Delivery hasta 23:30. Si tardamos más de 35, te avisamos nosotros.</p>
+        <div class="contact-items">
+          <div class="c-item"><span>📍</span><div><strong>Av. Libertador 1234, Martínez</strong>Buenos Aires</div></div>
+          <div class="c-item"><span>📞</span><div><strong>11 4444-5555</strong>WhatsApp y llamadas</div></div>
+          <div class="c-item"><span>⏰</span><div><strong>Todos los días</strong>mediodía y noche</div></div>
+        </div>
+        <div class="socials">
+          <a href="https://wa.me/5491112345678" target="_blank" aria-label="WhatsApp" class="s-btn wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.94A10 10 0 0 0 11.94 2C6.4 2 1.91 6.48 1.91 11.99c0 1.76.46 3.48 1.33 4.99L2 22l5.15-1.35a9.97 9.97 0 0 0 4.79 1.22h.01c5.53 0 10.02-4.48 10.02-10A9.9 9.9 0 0 0 19.05 4.94zm-7.11 15.9h-.01a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.06.8.82-2.98-.2-.31a8.32 8.32 0 0 1-1.28-4.42c0-4.6 3.74-8.34 8.35-8.34 2.23 0 4.32.87 5.89 2.44a8.28 8.28 0 0 1 2.44 5.9c0 4.6-3.74 8.34-8.35 8.34zm6.83-6.24c-.37-.19-2.2-1.09-2.54-1.21-.34-.12-.59-.19-.84.19s-.97 1.21-1.19 1.46-.43.28-.8.09c-.37-.19-1.57-.58-2.99-1.85-1.1-.98-1.85-2.2-2.06-2.57-.22-.37-.02-.57.16-.76.16-.16.37-.43.56-.64.19-.22.25-.37.37-.62.12-.25.06-.46-.03-.64s-.84-2.02-1.15-2.77c-.3-.72-.61-.62-.84-.63l-.72-.01c-.25 0-.64.09-.98.46s-1.29 1.26-1.29 3.08 1.32 3.57 1.5 3.82c.19.25 2.6 3.97 6.42 5.42 2.65.9 3.69 1 4.42.88.45-.07 1.38-.56 1.57-1.11.19-.55.19-1.02.13-1.11-.06-.1-.25-.16-.62-.34z"/></svg></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="s-btn ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="s-btn fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.76 0-5 2.24-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.55.45-1 1-1z"/></svg></a>
+          <a href="https://tiktok.com" target="_blank" aria-label="TikTok" class="s-btn tk"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a5.5 5.5 0 0 1-3.06-1v6.55a5.2 5.2 0 1 1-4.5-5.15v2.82a2.38 2.38 0 1 0 1.68 2.28V2h2.74a5.5 5.5 0 0 0 3.14 1.66v3.03z"/></svg></a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <h3>Escribinos, te contesta alguien de acá</h3>
+        <div class="f-row"><input type="text" placeholder="Tu nombre" required><input type="tel" placeholder="WhatsApp" required></div>
+        <input type="email" placeholder="Email (si querés)">
+        <select><option>Quiero hacer un pedido</option><option>Consulta</option><option>Quiero franquiciar</option><option>Trabajar con nosotros</option></select>
+        <textarea rows="4" placeholder="Contame qué tenés ganas de comer..."></textarea>
+        <button type="submit" class="button button--full">ENVIAR MENSAJE ✉️</button>
+        <p class="form-note">Te respondemos por WhatsApp en cinco minutos. Si no, nos perdimos tu mensaje y te pedimos perdón.</p>
+      </form>
+    </div>
+    <div class="map-placeholder reveal">
+      <iframe src="https://maps.google.com/maps?q=Av%20Libertador%20Martinez&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand"><img src="assets/logo.png" alt="Don Matteo"><p>Parrilla, masa y familia. Desde 1998 en Martínez, sin vueltas.</p></div>
+    <div><h4>Menú</h4><a href="#menu">Hamburguesas</a><a href="#menu">Empanadas</a><a href="#menu">Pizzas</a></div>
+    <div><h4>Don Matteo</h4><a href="#nosotros">Nuestra historia</a><a href="#contacto">Contacto</a><a href="#">Trabajá con nosotros</a></div>
+    <div><h4>Seguinos</h4><p style="font-size:13px; opacity:.7">11:30–15h y 19–00h<br>PedidosYa • Rappi • WhatsApp</p></div>
+  </div>
+  <div class="footer-bottom">© 2026 DON MATTEO — Hecho con mucho cheddar y sin apuro.</div>
+</footer>
+
+<div class="cart-fab" id="cartFab">🛒 <span id="cartCount">0</span></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-head"><h3>Tu pedido</h3><button id="closeCart">✕</button></div>
+  <div class="cart-items" id="cartItems">
+    <div class="empty-cart"><img src="assets/personaje-saludando.png" alt="" width="120" style="margin:0 auto 12px;display:block"><p><strong>Todavía no elegiste nada</strong><br>Matteo ya prendió la plancha. Tocá agregar y lo armamos al momento.</p><a href="#menu" onclick="closeCart()" class="button button--sm" style="margin-top:14px">VER MENÚ</a></div>
+  </div>
+  <div class="cart-foot"><div class="cart-total">Total: <strong id="cartTotal">$0</strong></div><a href="https://wa.me/5491112345678" target="_blank" class="button button--full" id="checkoutBtn">PEDIR POR WHATSAPP</a></div>
+</div>
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "anti-ai-slop-writing": {
+      "source": "jalaalrd/anti-ai-slop-writing",
+      "sourceType": "github",
+      "skillPath": "skills/anti-ai-slop-writing/SKILL.md",
+      "computedHash": "894339ca94325115c37cb7be1f703cee6fd2d840d3971b765e0db7f3613c4fa9"
+    },
+    "emil-design-eng": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/emil-design-eng/SKILL.md",
+      "computedHash": "51f2537e04d15911b41d78e2de24c36a0e26d41beae15e82a954fe5496a5eda9"
+    },
+    "impeccable": {
+      "source": "pbakaus/impeccable",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/impeccable/SKILL.md",
+      "computedHash": "d4cfdc3b7a18041ff02e1ad4b6377450e978e10928ba7e96377ff7d66994b490"
+    }
+  }
+}
