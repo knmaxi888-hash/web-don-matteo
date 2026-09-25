@@ -165,6 +165,7 @@ img{display:block;max-width:100%}
 .socials{display:flex;gap:12px;margin-top:18px}
 .s-btn{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(219,174,217,.2);transition:transform 160ms var(--ease-out), background .2s, border-color .2s}
 .s-btn svg{width:24px;height:24px}
+.s-btn.wa svg{width:22px;height:22px}
 @media(hover:hover) and (pointer:fine){.s-btn:hover{transform:translateY(-2px)}}
 .s-btn.wa:hover{background:#25D366;border-color:#25D366;color:white}
 .s-btn.ig:hover{background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);border-color:transparent;color:white}
