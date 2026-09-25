@@ -1,26 +1,26 @@
 const burgers=[
-  {id:1,name:"La Clásica Matteo",desc:"Medallón 180g, cheddar x2, lechuga, tomate, salsa casera. La que nunca falla.",price:8900,cat:"clasica",badge:"MÁS PEDIDA"},
-  {id:2,name:"Doble Bacon Smash",desc:"Doble carne smash, bacon crocante, cheddar, cebolla crispy y alioli.",price:11900,cat:"doble",badge:"SMASH"},
-  {id:3,name:"La Don Matteo XXL",desc:"Triple carne, triple cheddar, bacon, huevo, papas pay.",price:14900,cat:"doble",badge:"XXL"},
-  {id:4,name:"Crispy Pollo",desc:"Pechuga panko, cheddar, coleslaw y honey mustard.",price:9500,cat:"premium",badge:"NUEVA"},
-  {id:5,name:"Veggie Lila",desc:"Medallón de lentejas y hongos, palta, tomate seco, rúcula.",price:8700,cat:"clasica",badge:"VEGGIE"},
-  {id:6,name:"Barbacoa Premium",desc:"180g, cheddar, bacon, aros de cebolla, BBQ ahumada.",price:10800,cat:"premium",badge:"PREMIUM"},
+  {id:1,name:"La Clásica Matteo",desc:"Medallón 180g, cheddar x2, lechuga, tomate, salsa casera. La que nunca falla.",price:8900,cat:"clasica",badge:"MÁS PEDIDA",img:"assets/menu/burger-1-clasica-matteo.jpg"},
+  {id:2,name:"Doble Bacon Smash",desc:"Doble carne smash, bacon crocante, cheddar, cebolla crispy y alioli.",price:11900,cat:"doble",badge:"SMASH",img:"assets/menu/burger-2-doble-bacon-smash.jpg"},
+  {id:3,name:"La Don Matteo XXL",desc:"Triple carne, triple cheddar, bacon, huevo, papas pay.",price:14900,cat:"doble",badge:"XXL",img:"assets/menu/burger-3-xxl.jpg"},
+  {id:4,name:"Crispy Pollo",desc:"Pechuga panko, cheddar, coleslaw y honey mustard.",price:9500,cat:"premium",badge:"NUEVA",img:"assets/menu/burger-4-crispy-pollo.jpg"},
+  {id:5,name:"Veggie Lila",desc:"Medallón de lentejas y hongos, palta, tomate seco, rúcula.",price:8700,cat:"clasica",badge:"VEGGIE",img:"assets/menu/burger-5-veggie-lila.jpg"},
+  {id:6,name:"Barbacoa Premium",desc:"180g, cheddar, bacon, aros de cebolla, BBQ ahumada.",price:10800,cat:"premium",badge:"PREMIUM",img:"assets/menu/burger-6-barbacoa-premium.jpg"},
 ];
 const empanadas=[
-  {id:101,name:"Carne Cortada a Cuchillo",desc:"Carne, huevo, aceituna y verdeo. La reina.",price:1500},
-  {id:102,name:"Pollo al Curry Suave",desc:"Pollo, morrón, cebolla caramelizada.",price:1500},
-  {id:103,name:"Jamón y Queso Cremoso",desc:"Jamón natural, mozzarella y orégano.",price:1400},
-  {id:104,name:"Caprese",desc:"Tomate, mozzarella, albahaca y oliva.",price:1500},
-  {id:105,name:"Humita Dulce",desc:"Choclo cremoso, cebolla y queso.",price:1400},
-  {id:106,name:"Cebolla y Queso",desc:"Cebolla caramelizada, mozzarella.",price:1400},
+  {id:101,name:"Carne Cortada a Cuchillo",desc:"Carne, huevo, aceituna y verdeo. La reina.",price:1500,img:"assets/menu/emp-101-carne-cuchillo.jpg"},
+  {id:102,name:"Pollo al Curry Suave",desc:"Pollo, morrón, cebolla caramelizada.",price:1500,img:"assets/menu/emp-102-pollo-curry.jpg"},
+  {id:103,name:"Jamón y Queso Cremoso",desc:"Jamón natural, mozzarella y orégano.",price:1400,img:"assets/menu/emp-103-jamon-queso.jpg"},
+  {id:104,name:"Caprese",desc:"Tomate, mozzarella, albahaca y oliva.",price:1500,img:"assets/menu/emp-104-caprese.jpg"},
+  {id:105,name:"Humita Dulce",desc:"Choclo cremoso, cebolla y queso.",price:1400,img:"assets/menu/emp-105-humita-dulce.jpg"},
+  {id:106,name:"Cebolla y Queso",desc:"Cebolla caramelizada, mozzarella.",price:1400,img:"assets/menu/emp-106-cebolla-queso.jpg"},
 ];
 const pizzas=[
-  {id:201,name:"Muzzarella de Barrio",desc:"Mucha muzza, orégano del bueno, aceitunas.",price:8900,badge:"CLÁSICA"},
-  {id:202,name:"Napolitana",desc:"Tomate, muzza, ajo, albahaca fresca.",price:9900,badge:"CLÁSICA"},
-  {id:203,name:"Fugazzeta",desc:"Cebolla blanca y verdeo, muzza y parmesano.",price:10900,badge:"TOP"},
-  {id:204,name:"Pepperoni Picante",desc:"Pepperoni, muzza, toque de miel picante.",price:11900,badge:"PICANTE"},
-  {id:205,name:"Provolone y Rúcula",desc:"Provolone fundido, rúcula, tomatitos.",price:11800,badge:"PREMIUM"},
-  {id:206,name:"Don Matteo Especial",desc:"Muzza, jamón, morrón, huevo, aceitunas.",price:12900,badge:"DE LA CASA"},
+  {id:201,name:"Muzzarella de Barrio",desc:"Mucha muzza, orégano del bueno, aceitunas.",price:8900,badge:"CLÁSICA",img:"assets/menu/pizza-201-muzzarella.jpg"},
+  {id:202,name:"Napolitana",desc:"Tomate, muzza, ajo, albahaca fresca.",price:9900,badge:"CLÁSICA",img:"assets/menu/pizza-202-napolitana.jpg"},
+  {id:203,name:"Fugazzeta",desc:"Cebolla blanca y verdeo, muzza y parmesano.",price:10900,badge:"TOP",img:"assets/menu/pizza-203-fugazzeta.jpg"},
+  {id:204,name:"Pepperoni Picante",desc:"Pepperoni, muzza, toque de miel picante.",price:11900,badge:"PICANTE",img:"assets/menu/pizza-204-pepperoni.jpg"},
+  {id:205,name:"Provolone y Rúcula",desc:"Provolone fundido, rúcula, tomatitos.",price:11800,badge:"PREMIUM",img:"assets/menu/pizza-205-provolone-rucula.jpg"},
+  {id:206,name:"Don Matteo Especial",desc:"Muzza, jamón, morrón, huevo, aceitunas.",price:12900,badge:"DE LA CASA",img:"assets/menu/pizza-206-especial.jpg"},
 ];
 
 const burgerGrid=document.getElementById('burgerGrid');
@@ -30,10 +30,9 @@ const tabs=document.querySelectorAll('.tab');
 const menuCta=document.getElementById('menuCta');
 
 function cardHTML(item, type){
-  const seed=item.id*37;
-  const placeholder=`https://picsum.photos/seed/${seed}/600/400`;
+  const src=item.img||'assets/menu/fallback.png';
   return `<article class="menu-card">
-    <div class="menu-card-img"><img src="${placeholder}" alt="${item.name}" loading="lazy" onerror="this.style.display='none'"><span class="menu-card-badge">${item.badge||'CASERA'}</span><span class="menu-card-price">$${item.price.toLocaleString('es-AR')}</span></div>
+    <div class="menu-card-img"><img src="${src}" alt="${item.name}" loading="lazy" onerror="this.onerror=null;this.src='assets/menu/fallback.png'"><span class="menu-card-badge">${item.badge||'CASERA'}</span><span class="menu-card-price">$${item.price.toLocaleString('es-AR')}</span></div>
     <div class="menu-card-body"><h3>${item.name}</h3><p>${item.desc}</p><div class="card-actions"><button class="button button--sm" onclick="addToCart(${item.id},'${type}')" aria-label="Agregar ${item.name}">AGREGAR +</button></div></div>
   </article>`;
 }
@@ -159,7 +158,7 @@ function updateCart(){
     document.getElementById('checkoutBtn').href='https://wa.me/5491112345678';
     return;
   }
-  cartItems.innerHTML=cart.map(c=>`<div class="cart-item"><img src="https://picsum.photos/seed/${c.id*37}/100/100" alt=""><div class="cart-item-info"><strong>${c.name}</strong><span>$${c.price.toLocaleString('es-AR')} c/u</span></div><div class="cart-item-qty"><button onclick="changeQty(${c.id},-1)" aria-label="restar">−</button><span>${c.qty}</span><button onclick="changeQty(${c.id},1)" aria-label="sumar">+</button></div></div>`).join('');
+  cartItems.innerHTML=cart.map(c=>`<div class="cart-item"><img src="${c.img||'assets/menu/fallback.png'}" alt="${c.name}" onerror="this.onerror=null;this.src='assets/menu/fallback.png'"><div class="cart-item-info"><strong>${c.name}</strong><span>$${c.price.toLocaleString('es-AR')} c/u</span></div><div class="cart-item-qty"><button onclick="changeQty(${c.id},-1)" aria-label="restar">−</button><span>${c.qty}</span><button onclick="changeQty(${c.id},1)" aria-label="sumar">+</button></div></div>`).join('');
   const wa=`Hola Don Matteo! Quiero pedir:\n${cart.map(c=>`• ${c.qty}x ${c.name} ($${c.price*c.qty})`).join('\n')}\nTotal: $${total}`;
   document.getElementById('checkoutBtn').href=`https://wa.me/5491112345678?text=${encodeURIComponent(wa)}`;
 }
