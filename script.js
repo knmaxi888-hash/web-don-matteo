@@ -158,11 +158,12 @@ function updateCart(){
     document.getElementById('checkoutBtn').href='https://wa.me/5491112345678';
     return;
   }
-  cartItems.innerHTML=cart.map(c=>`<div class="cart-item"><img src="${c.img||'assets/menu/fallback.png'}" alt="${c.name}" onerror="this.onerror=null;this.src='assets/menu/fallback.png'"><div class="cart-item-info"><strong>${c.name}</strong><span>$${c.price.toLocaleString('es-AR')} c/u</span></div><div class="cart-item-qty"><button onclick="changeQty(${c.id},-1)" aria-label="restar">−</button><span>${c.qty}</span><button onclick="changeQty(${c.id},1)" aria-label="sumar">+</button></div></div>`).join('');
+  cartItems.innerHTML=cart.map(c=>`<div class="cart-item"><img src="${c.img||'assets/menu/fallback.png'}" alt="${c.name}" onerror="this.onerror=null;this.src='assets/menu/fallback.png'"><div class="cart-item-info"><strong>${c.name}</strong><span>$${c.price.toLocaleString('es-AR')} c/u</span></div><div class="cart-item-qty"><button onclick="changeQty(${c.id},-1)" aria-label="restar">−</button><span>${c.qty}</span><button onclick="changeQty(${c.id},1)" aria-label="sumar">+</button></div><button class="cart-item-x" onclick="removeItem(${c.id})" aria-label="Quitar ${c.name} del carrito">×</button></div>`).join('');
   const wa=`Hola Don Matteo! Quiero pedir:\n${cart.map(c=>`• ${c.qty}x ${c.name} ($${c.price*c.qty})`).join('\n')}\nTotal: $${total}`;
   document.getElementById('checkoutBtn').href=`https://wa.me/5491112345678?text=${encodeURIComponent(wa)}`;
 }
 window.changeQty=(id,d)=>{ const it=cart.find(c=>c.id===id); if(!it) return; it.qty+=d; if(it.qty<=0) cart=cart.filter(c=>c.id!==id); updateCart(); }
+window.removeItem=id=>{ const it=cart.find(c=>c.id===id); cart=cart.filter(c=>c.id!==id); updateCart(); if(it) showToast(it.name+' sale del pedido.'); };
 
 const toast=document.getElementById('toast');
 function showToast(m){ toast.textContent=m; toast.classList.add('show'); clearTimeout(showToast._t); showToast._t=setTimeout(()=>toast.classList.remove('show'),3000); }
