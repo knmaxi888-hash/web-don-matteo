@@ -170,9 +170,10 @@ function showToast(m){ toast.textContent=m; toast.classList.add('show'); clearTi
 
 document.getElementById('contactForm').addEventListener('submit',e=>{
   e.preventDefault();
-  const btn=e.target.querySelector('button'); const prev=btn.textContent;
+  const btn=e.target.querySelector('button[type=submit]'); const prev=btn.textContent;
+  const motivo=e.target.querySelector('input[name=motivo]:checked')?.value||'Consulta';
   btn.textContent='¡RECIBIDO! ✓'; btn.disabled=true;
-  showToast('Listo. Te escribe alguien de la cocina en un ratito, sin vueltas.');
+  showToast(motivo+': mensaje entregado. Te escribe Matteo o la familia.');
   for(let i=0;i<6;i++){ const c=document.createElement('div'); c.className='crumb'; c.textContent='💬'; const r=btn.getBoundingClientRect(); c.style.left=(r.left+r.width/2)+'px'; c.style.top=r.top+'px'; c.style.setProperty('--x',(Math.random()-.5)*100+'px'); c.style.setProperty('--y',(-30-Math.random()*50)+'px'); document.body.appendChild(c); setTimeout(()=>c.remove(),720); }
   setTimeout(()=>{ btn.textContent=prev; btn.disabled=false; e.target.reset(); },2200);
 });

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 <!-- BRAND INTRO - animación de marca -->
@@ -150,7 +150,7 @@
       <div class="contact-info reveal">
         <span class="eyebrow light">VENÍ O ESCRIBÍ</span>
         <h2>¿HAMBRE?<br><span>HABLEMOS.</span></h2>
-        <p>Estamos de 11:30 a 15 y de 19 a 00. Delivery hasta 23:30. Si tardamos más de 35, te avisamos nosotros.</p>
+        <p>Los pedidos salen por WhatsApp. De 11:30 a 15 y de 19 a 00, con delivery hasta las 23:30. Para <strong>trabajo, colaboraciones o franquicias</strong>, escribinos por el formulario y te respondemos directo.</p>
         <div class="contact-items">
           <div class="c-item"><span>📍</span><div><strong>Av. Libertador 1234, Martínez</strong>Buenos Aires</div></div>
           <div class="c-item"><span>📞</span><div><strong>11 4444-5555</strong>WhatsApp y llamadas</div></div>
@@ -164,11 +164,18 @@
         </div>
       </div>
       <form class="contact-form reveal" id="contactForm">
+        <span class="f-tag">CONTACTO COMERCIAL</span>
         <h3>Escribinos, te contesta alguien de acá</h3>
+        <p class="f-lead">Este formulario es para <strong>propuestas de trabajo, colaboraciones y franquicias</strong>. Los pedidos salen por WhatsApp.</p>
         <div class="f-row"><input type="text" placeholder="Tu nombre" required><input type="tel" placeholder="WhatsApp" required></div>
-        <input type="email" placeholder="Email (si querés)">
-        <select><option>Quiero hacer un pedido</option><option>Consulta</option><option>Quiero franquiciar</option><option>Trabajar con nosotros</option></select>
-        <textarea rows="4" placeholder="Contame qué tenés ganas de comer..."></textarea>
+        <input type="email" placeholder="Email" required>
+        <div class="f-chips" role="radiogroup" aria-label="Motivo de contacto">
+          <label class="f-chip"><input type="radio" name="motivo" value="Propuesta de trabajo" checked><span>Propuesta de trabajo</span></label>
+          <label class="f-chip"><input type="radio" name="motivo" value="Colaboración"><span>Colaboración</span></label>
+          <label class="f-chip"><input type="radio" name="motivo" value="Franquicia"><span>Franquicia</span></label>
+          <label class="f-chip"><input type="radio" name="motivo" value="Consulta"><span>Consulta</span></label>
+        </div>
+        <textarea rows="4" placeholder="Contame de qué se trata..."></textarea>
         <button type="submit" class="button button--full">ENVIAR MENSAJE ✉️</button>
         <p class="form-note">Te respondemos por WhatsApp en cinco minutos. Si no, nos perdimos tu mensaje y te pedimos perdón.</p>
       </form>
@@ -199,6 +206,6 @@
 </div>
 <div class="cart-overlay" id="cartOverlay"></div>
 <div class="toast" id="toast"></div>
-<script src="script.js?v=9"></script>
+<script src="script.js?v=10"></script>
 </body>
 </html>
