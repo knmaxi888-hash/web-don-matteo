@@ -141,8 +141,8 @@ img{display:block;max-width:100%}
 .separator-personaje{background:var(--lila);color:var(--bordo);padding:40px 24px;margin:0}
 .sep-inner{max-width:900px;margin:0 auto;display:flex;gap:32px;align-items:center;justify-content:center;flex-wrap:wrap}
 .sep-img{width:240px;height:auto}
-.sep-text h3{font-family:"Bebas Neue",sans-serif;font-size:44px;line-height:.9}
-.sep-badge{background:var(--bordo);color:var(--lila);padding:6px 12px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:1px}
+.sep-text h3{font-family:"Bebas Neue",sans-serif;font-size:44px;line-height:.9;margin:0}
+.sep-badge{display:inline-block;background:var(--bordo);color:var(--lila);padding:6px 12px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:1px;margin-bottom:14px}
 .sep-text p{max-width:380px;margin-top:10px;line-height:1.5;opacity:.8}
 
 .testimonios{background:var(--bordo);padding:50px 0;border-top:1px solid rgba(219,174,217,.15);border-bottom:1px solid rgba(219,174,217,.15)}
